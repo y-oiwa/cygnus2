@@ -1,0 +1,1 @@
+const viwe = document.getElementsByClassName("view")

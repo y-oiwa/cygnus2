@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cygnus 2</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/destyle.css@2.0.2/destyle.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- main view -->
@@ -21,21 +27,23 @@
     <!-- form view -->
     <div class="view" id="form-view">
         <h1 class="logo">Cygnus 2</h1>
-        <ul>
-            <li>
-                <label for="name"></label>
-                <input type="text" name="name" id="name" required>
-            </li>
-            <li>
-                <label for="name"></label>
-                <input type="text" name="name" id="name" required>
-            </li>
-            <li>
-                <label for="name"></label>
-                <input type="text" name="name" id="name" required>
-            </li>
-            <div id="save-btn">Save</div>
-        </ul>
+        <form>
+            <ul>
+                <li>
+                    <label for="name">氏名</label>
+                    <input type="text" name="name" id="name" required>
+                </li>
+                <li>
+                    <label for="homeroom">クラス</label>
+                    <input type="text" name="homeroom" id="homeroom" required>
+                </li>
+                <li>
+                    <label for="studentId">出席番号(2桁)</label>
+                    <input type="text" name="studentId" id="studentId" required>
+                </li>
+                <div id="save-btn">Save</div>
+            </ul>
+        </form>
     </div>
 
     <!-- menu view -->
@@ -46,5 +54,6 @@
         </ul>
     </div>
     
+    <script src="main.js"></script>
 </body>
 </html>
